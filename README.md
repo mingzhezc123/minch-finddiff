@@ -14,4 +14,4 @@
 
 ## 展示
 
-> ![show]()
+> ![show](https://github.com/mingzhezc123/minch-finddiff/blob/master/show/show.gif)
