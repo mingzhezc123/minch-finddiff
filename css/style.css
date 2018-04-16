@@ -1,0 +1,83 @@
+/*全局样式定义*/
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;/*去掉 li 前边的小圆点*/
+  text-decoration: none;/*去掉 a 下边的下划线*/
+}
+/*共同样式*/
+.container,.back{
+  width: 300px;/*宽*/
+  height: 500px;/*高*/
+  padding: 50px;/*内边距*/
+  position: absolute;/*绝对定位*/
+  top: 50%;
+  left: 50%;
+  margin-top: -300px;/*顶部外边距*/
+  margin-left: -200px;
+}
+/*************************遮罩层样式************************/
+.back{
+  background-color: #000;/*背景颜色*/
+  opacity: 0.8;/*透明度：0-1*/
+  z-index: 1000;/*层级：+、-、0*/
+  display: none;/*显示方式*/
+}
+.back h1{
+  text-align: center;/*文本水平方向对齐方式*/
+  padding-top: 200px;/*顶部内边距*/
+}
+.back h1 a{
+  color: #fff;/*文本颜色*/
+}
+/***********************游戏主容器**********************/
+.container{
+  background-color: #aeaeae;/*背景颜色*/
+}
+/*时间*/
+.left{
+  float: left;/*左浮动*/
+}
+/*分数*/
+.right{
+  float: right;/*右浮动*/
+}
+/*游戏主体*/
+.main{
+  width: 300px;
+  background-color: orange;
+  text-align: center;/*内容水平方向居中*/
+  margin: 80px auto 20px;
+}
+.list1{
+  width: 100%;
+}
+.list1>img{
+  width: 100%;
+  display: block;/*显示成块元素*/
+}
+/*开始游戏按钮*/
+button{
+  width: 200px;
+  height: 40px;
+  border: none;/*去掉边框*/
+  border-radius: 10px;/*圆角*/
+  color: #fff;/*文本颜色：白色*/
+  font-size: 20px;/*字号大小*/
+  background: linear-gradient(#59ad42,#319428);
+  position: relative;/*相对定位*/
+  left: 50%;
+  transform: translateX(-50%);/*水平方向上向左移动50%*/
+  outline: none;/*外框*/
+  cursor: pointer;/*鼠标指针：小手*/
+}
+button:hover{
+  background: linear-gradient(#319428,#59ad42);
+}/*鼠标滑上改变样式*/
+/*切换模式按钮*/
+#turnOff{
+  width: 80px;
+  height: 40px;
+  display: block;
+  background: transparent;/*背景色透明*/
+}

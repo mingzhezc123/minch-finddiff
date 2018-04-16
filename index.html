@@ -1,0 +1,40 @@
+<!--html类型文档声明-->
+<!DOCTYPE html>
+<!--所有html代码写在一对html标签中，lang属性规定语言，en代表英文-->
+<html lang="en">
+<!--head标签里的内容不会显示在浏览器页面上，但规定了一些字符编码方式和标签页标题以及外链的一些文件等-->
+<head>
+  <!--规定字符编码集，utf-8支持编码中文-->
+  <meta charset="UTF-8">
+  <!--规定标签页标题-->
+  <title>找茬</title>
+  <!--外链css样式文件-->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<!--浏览器网页中显示的内容都写在body标签里-->
+<body>
+  <div class="back">
+    <h1><a href="#">重新开始</a></h1>
+  </div>
+  <div class="container">
+    <div class="left">
+      <span>剩余时间：</span>
+      <span id="second">30.00</span>s
+    </div>
+    <div class="right">
+      <span>分数：</span>
+      <span id="score">0</span>
+    </div>
+    <div class="main">
+      <ul>
+        <li class="list1">
+          <img src="img/2.png" alt="">
+        </li>
+      </ul>
+    </div>
+    <button id="start">点 击 开 始 游 戏</button>
+    <button id="turnOff">护眼模式</button>
+  </div>
+</body>
+<script src="js/main.js"></script>
+</html>
